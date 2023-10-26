@@ -22,7 +22,7 @@ clear_branch() {
     if [ -z "$(git log -1 --since='1 minutes ago' -s $k)" ] && [[ $result ]]
     then
       git branch -d $k
-      #git push origin -d $k
+      git push origin -d $k
     fi
   done
 }
