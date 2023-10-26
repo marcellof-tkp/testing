@@ -8,11 +8,11 @@ git_is_merged () {
   merge_source_current_commit=$(git rev-parse $merge_source_branch)
   if [[ $merge_base = $merge_source_current_commit ]]
   then
-    echo true
-    #echo $merge_source_branch is merged into $merge_destination_branch
+    #echo true
+    echo $merge_source_branch is merged into $merge_destination_branch
   else
-    echo false
-    #echo $merge_source_branch is not merged into $merge_destination_branch
+    #echo false
+    echo $merge_source_branch is not merged into $merge_destination_branch
   fi
 }
 
