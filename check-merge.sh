@@ -16,10 +16,5 @@ git_is_merged () {
   fi
 }
 
-result=$(git_is_merged main b)
-if [[ $result ]]
-then
-  echo "true"
-else
-  echo "false"
-fi
+result=$(git_is_merged main c)
+echo $result
