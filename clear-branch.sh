@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 git_is_merged () {
-  merge_destination_branch=main
-  merge_source_branch=b
+  merge_destination_branch=$1
+  merge_source_branch=$2
 
   merge_base=$(git merge-base $merge_destination_branch $merge_source_branch)
   merge_source_current_commit=$(git rev-parse $merge_source_branch)
