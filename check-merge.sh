@@ -16,5 +16,5 @@ git_is_merged () {
   fi
 }
 
-result=$(git_is_merged main c)
+result=$(git_is_merged main d)
 echo $result
